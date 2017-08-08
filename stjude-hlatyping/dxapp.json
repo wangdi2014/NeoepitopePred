@@ -1,0 +1,101 @@
+{
+  "name": "stjude-hlatyping",
+  "title": "HLATyping (St. Jude)",
+  "summary": "Predict the HLA class I alleles",
+  "dxapi": "1.0.0",
+  "version": "0.0.6",
+  "inputSpec": [
+    {
+      "name": "fastq1",
+      "label": "Forward read fastq",
+      "class": "file",
+      "optional": true,
+      "patterns": [
+        "*.fq", "*.fastq"
+      ],
+      "help": "First fastq file HLA typing"
+    },
+    {
+      "name": "fastq2",
+      "label": "Reverse read fastq",
+      "class": "file",
+      "optional": true,
+      "patterns": [
+        "*.fq", "*.fastq"
+      ],
+      "help": "Second fastq file for HLA typing"
+    },
+    {
+      "name": "BAM",
+      "label": "BAM alignment file",
+      "class": "file",
+      "optional": true,
+      "patterns": [
+        "*.bam", "*.BAM"
+      ],
+      "help": "BAM file for HLA typing"
+    },
+    {
+      "name": "BAM_idx",
+      "label": "BAM index file",
+      "class": "file",
+      "optional": true,
+      "patterns": [
+        "*.bai"
+      ],
+      "help": "BAM index file for HLA typing. NOTE: the process will be faster if a corresponding BAM index provided."
+    }
+
+  ],
+  "outputSpec": [
+    {
+      "name": "hlatype",
+      "label": "hlatype",
+      "class": "file",
+      "patterns": [
+        "*.hlatype"
+      ],
+      "help": "Output of HLA type"
+    },
+    {
+      "name": "optitype",
+      "label": "optitype",
+      "class": "array:file",
+      "patterns": [
+        "*"
+      ],
+      "help": "Output of Optitype"
+    }
+
+
+  ],
+  "runSpec": {
+    "timeoutPolicy": {
+      "*": {
+        "hours": 48
+      }
+    },
+    "interpreter": "bash",
+    "file": "src/HLAtyping.sh",
+    "execDepends": [{"name": "openjdk-8-jre"}],
+    "systemRequirements": {
+      "*": {
+        "instanceType": "azure:mem4_ssd1_x8"
+      }
+    },
+    "distribution": "Ubuntu",
+    "release": "14.04"
+  },
+  "access": {
+    "project": "CONTRIBUTE",
+    "network": [
+      "*"
+    ]
+  },
+  "billto": "org-stjude_cloud",
+  "developers":[
+      "user-disonchang"
+  ],
+  "authorizedUsers":[ "org-stjude_cloud" ],
+  "openSource": false
+}
