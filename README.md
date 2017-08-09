@@ -24,7 +24,7 @@ The stjude-epitope applet requires human reference genome (Hg19) which is not in
 
 
 **References**  
-[1] Chang T-C, Carter RA, Li YJ, Li YX, Wang H, Edmonson MN, Chen X, Arnold P, Geiger TL, G. Wu, Peng JM, Dyer M, Downing JR, Green DR Green, Thomas PG. Thomas, Zhang JH: The Neoepitope Landscape in Pediatric Cancers.  
+[1] Chang T-C, Carter R, Li YJ, Li YX, Wang H, Edmonson M, Chen X, Arnold P, Geiger T, Wu G, Peng JM, Dyer M, Downing J, Green D, Thomas P, Zhang JH: The Neoepitope Landscape in Pediatric Cancers.  
 [2] Szolek A, Schubert B, Mohr C, Sturm M, Feldhahn M, Kohlbacher O: OptiType: precision HLA typing from next-generation sequencing data. Bioinformatics 2014, 30:3310-3316.  
 [3] Karosiene E, Lundegaard C, Lund O, Nielsen M: NetMHCcons: a consensus method for the major histocompatibility complex class I predictions. Immunogenetics 2012, 64:177-186.
 
