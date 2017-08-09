@@ -77,11 +77,9 @@
     ]
   },
 
-  "billto": "org-stjude_cloud",
+  
   "developers":[
       "user-disonchang"
-  ],
-  "authorizedUsers":[ "org-stjude_cloud" ],
-  "openSource": false
+  ]
 
 }
