@@ -15,20 +15,17 @@ Here you'll find the source code for the applets implementing individual pipelin
 
   The shell and python scripts for building the applets and instantiating DNAnexus are included the root and bin directory. The applets can be used to construct DNAnexus [workflows](https://wiki.dnanexus.com/UI/Workflows). You'll need the [DNAnexus SDK](https://wiki.dnanexus.com/Command-Line-Client/Quickstart) installed and set up to run these scripts.
 
-**Prerequisite**
-
-The workflow incoporated the following softwares:
-
-OptiType 1.0 [2]\n
+**Prerequisite**  
+The workflow incoporated the following softwares:  
+OptiType 1.0 [2]  
 netMHCcons 1.1 [3]
 
 The stjude-epitope applet requires human reference genome (Hg19) which is not included. Users can obtain the genome sequence from [UCSC](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/) and place it into the following folder: stjude-epitope/resources/usr/genome
 
 
-**References**
-
-[1] Chang T-C, Carter RA, Li YJ, Li YX, Wang H, Edmonson MN, Chen X, Arnold P, Geiger TL, G. Wu, Peng JM, Dyer M, Downing JR, Green DR Green, Thomas PG. Thomas, Zhang JH: The Neoepitope Landscape in Pediatric Cancers.\n
-[2] Szolek A, Schubert B, Mohr C, Sturm M, Feldhahn M, Kohlbacher O: OptiType: precision HLA typing from next-generation sequencing data. Bioinformatics 2014, 30:3310-3316.\n
+**References**  
+[1] Chang T-C, Carter RA, Li YJ, Li YX, Wang H, Edmonson MN, Chen X, Arnold P, Geiger TL, G. Wu, Peng JM, Dyer M, Downing JR, Green DR Green, Thomas PG. Thomas, Zhang JH: The Neoepitope Landscape in Pediatric Cancers.  
+[2] Szolek A, Schubert B, Mohr C, Sturm M, Feldhahn M, Kohlbacher O: OptiType: precision HLA typing from next-generation sequencing data. Bioinformatics 2014, 30:3310-3316.  
 [3] Karosiene E, Lundegaard C, Lund O, Nielsen M: NetMHCcons: a consensus method for the major histocompatibility complex class I predictions. Immunogenetics 2012, 64:177-186.
 
 
