@@ -15,7 +15,7 @@ Here you'll find the source code for two applets implementing individual pipelin
 
 
 
-The shell and python scripts for building the applets and instantiating DNAnexus are included the root and bin directory. The applets can be used to construct a workflow [workflows](https://wiki.dnanexus.com/UI/Workflows) using them. You'll need the [DNAnexus SDK](https://wiki.dnanexus.com/Command-Line-Client/Quickstart) installed and set up to run these scripts.
+The shell and python scripts for building the applets and instantiating DNAnexus are included the root and bin directory. The applets can be used to construct DNAnexus [workflows](https://wiki.dnanexus.com/UI/Workflows). You'll need the [DNAnexus SDK](https://wiki.dnanexus.com/Command-Line-Client/Quickstart) installed and set up to run these scripts.
 
 **Reference**
 
