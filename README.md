@@ -1,6 +1,6 @@
 # Neoepitope prediction (St Jude)
 
-** Background **
+**Background**
 
 Cancers are caused by somatically acquired alterations including single nucleotide variations (SNVs), small insertion/deletions (indels), translocations, and other types of rearrangements. The genes affected by these mutations may produce altered proteins, some of which may lead to the emergence of tumor-specific immunogenic epitopes. We developed an analytical workflow for identification of putative neoepitopes based on somatic missense mutations and gene fusions using whole genome sequencing data. The workflow was used to characterize the neoepitope landscape of 23 subtypes of pediatric cancer analyzed in the Pediatric Cancer Genome Project (PCGP).
 
@@ -17,7 +17,7 @@ Here you'll find the source code for two applets implementing individual pipelin
 
 The shell and python scripts for building the applets and instantiating DNAnexus are included the root and bin directory. The applets can be used to construct a workflow [workflows](https://wiki.dnanexus.com/UI/Workflows) using them. You'll need the [DNAnexus SDK](https://wiki.dnanexus.com/Command-Line-Client/Quickstart) installed and set up to run these scripts.
 
-** Reference **
+**Reference**
 T.-C. Chang, R. A. Carter, Y. Li, Y. Li, H. Wang, M. N. Edmonson, X. Chen, P. Arnold, T. L.  Geiger, G. Wu, J. Peng, M. Dyer, J. R. Downing, D. R. Green, P. G. Thomas, J. Zhang. The Neoepitope Landscape in Pediatric Cancers.
 
 
