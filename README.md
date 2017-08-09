@@ -16,8 +16,11 @@ Here you'll find the source code for the applets implementing individual pipelin
   The shell and python scripts for building the applets and instantiating DNAnexus are included the root and bin directory. The applets can be used to construct DNAnexus [workflows](https://wiki.dnanexus.com/UI/Workflows). You'll need the [DNAnexus SDK](https://wiki.dnanexus.com/Command-Line-Client/Quickstart) installed and set up to run these scripts.
 
 **Prerequisite**
+
 The workflow has incoporated the following softwares:
+
 OptiType 1.0 [2]
+
 netMHCcons 1.1 [3]
 
 The stjude-epitope applet requires human reference genome (Hg19) which is not included. Users can obtain the genome sequence from [UCSC](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/chromosomes/) and place it into the following folder: stjude-epitope/resources/usr/genome
