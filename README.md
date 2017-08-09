@@ -7,7 +7,7 @@ Cancers are caused by somatically acquired alterations including single nucleoti
 
 **Repository**
 
-Here you'll find the source code for two applets implementing individual pipeline stages of the neoepitope prediction workflow. 
+Here you'll find the source code for the applets implementing individual pipeline stages of the neoepitope prediction workflow. 
 
   The stjude-hlatype applet is used for predict the HLA class I alleles. User can select to provide fastq (paired or single end reads) or BAM file as input. When using BAMs as input, the reads surrounding the HLA loci and unmapped reads will be extracted. The reads will be fed into Optitype for HLA typing. The default setting of Optitype is used. The output of the HLA type can be combined with the stjude-epitope app (see below) to perform affinity prediction of neoepitopes.
   
