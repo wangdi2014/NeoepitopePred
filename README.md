@@ -17,7 +17,7 @@ Here you'll find the source code for the applets implementing individual pipelin
 
 **Prerequisite**
 
-The workflow has incoporated the following softwares:
+The workflow incoporated the following softwares:
 
 OptiType 1.0 [2]
 
