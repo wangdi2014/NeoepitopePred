@@ -2,7 +2,7 @@
 
 **Background**
 
-Cancers are caused by somatically acquired alterations including single nucleotide variations (SNVs), small insertion/deletions (indels), translocations, and other types of rearrangements. The genes affected by these mutations may produce altered proteins, some of which may lead to the emergence of tumor-specific immunogenic epitopes. We developed an analytical workflow for identification of putative neoepitopes based on somatic missense mutations and gene fusions using whole genome sequencing data. The workflow was used to characterize the neoepitope landscape of 23 subtypes of pediatric cancer analyzed in the Pediatric Cancer Genome Project (PCGP).
+Cancers are caused by somatically acquired alterations including single nucleotide variations (SNVs), small insertion/deletions (indels), translocations, and other types of rearrangements. The genes affected by these mutations may produce altered proteins, some of which may lead to the emergence of tumor-specific immunogenic epitopes. We developed an analytical workflow for identification of putative neoepitopes based on somatic missense mutations and gene fusions using whole genome sequencing data. The workflow has been used to characterize neoepitope landscape of 23 subtypes of pediatric cancer in the Pediatric Cancer Genome Project (PCGP).
 
 
 **This repository contains the source code for the workflow of HLA typeing and neoepitope prediction. The pipelines are available for use on DNAnexus.**
