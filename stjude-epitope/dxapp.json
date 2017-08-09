@@ -68,7 +68,7 @@
     "file": "src/epitope.sh",
     "distribution": "Ubuntu",
     "release": "14.04",
-    "systemRequirements": {"*": {"instanceType": "azure:mem2_ssd1_x4"}}
+    "systemRequirements": {"*": {"instanceType": "mem1_ssd1_x4"}}
   },
   "access": {
     "project": "CONTRIBUTE",
