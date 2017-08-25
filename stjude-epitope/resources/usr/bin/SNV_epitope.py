@@ -523,6 +523,37 @@ def netMHCcons(peptide_fn, allele="HLA-A02:01", MHC="netMHCcons", filter=0, size
 		status, output = commands.getstatusoutput(cmd)
 		#print(output)
 		MHC_out=pd.read_table(StringIO(output), header=None, sep='\s+', names=['Position','Allele', 'Peptide','ID', '1-log50k', 'nM', 'Rank', 'Binding'])
+		
+		f=open(peptide_fn)
+                header={}
+                fasta_cnt=0
+                for i, line in enumerate(f):
+                    if i % 2 ==0:
+                        fasta_cnt=fasta_cnt+1
+                        head=line.lstrip('>')
+                        head=head.strip()
+                        head15=head[0:15]
+                        fa = {str(fasta_cnt):{'full':head, '15chr':head15}}
+                        header.update(fa) 
+			
+	        if len(header) == len(MHC_out.ID.unique()):
+                    for idx, row in MHC_out.iterrows():
+                        chked=False
+                        for i in header:
+                            if header[i]['15chr'] == row['ID'] and header[i]['full'] == row['ID']:
+                                #print("[No need to update ID]")
+                                chked=True
+                                break
+                            elif header[i]['15chr'] == row['ID'] and not header[i]['full'] == row['ID']:
+                                print("[update ID] %s to %s" %(row['ID'], header[i]['full']))
+                                MHC_out.set_value(idx, 'ID', header[i]['full'])
+                                chked=True
+           
+                        if not chked:
+                            print("[Error] mapping of ID in netMHCcons has errors: %s" %(row['ID']))
+                else:
+                    print("[Error] ID in netMHCcons cannot be updated")
+		
 		#print(MHC_out.values)
 		MHC_out_filtered=MHC_out
 		if filter == 1:
