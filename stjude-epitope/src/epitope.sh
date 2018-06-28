@@ -93,11 +93,11 @@ main() {
     sudo apt-get update
     sudo apt-get install -y tcsh lzma liblzma-dev
     pip install numpy --upgrade
-    pip install pandas
-    pip install cython
-    pip install pysam
-    pip install biopython
-    pip install pyliftover
+    pip install pandas==0.18.1
+    pip install cython==0.23.4
+    pip install pysam==0.13
+    pip install biopython==1.61
+    pip install pyliftover==0.3
     echo "[Env set done] ... `date`"
     ##########################
 
